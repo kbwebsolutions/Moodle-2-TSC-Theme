@@ -1,0 +1,529 @@
+.pagelayout-frontpage,
+.pagelayout-incourse,
+.pagelayout-general,
+.pagelayout-course,
+.pagelayout-coursecategory,
+.pagelayout-admin,
+.pagelayout-mydashboard,
+.pagelayout-mypublic,
+.pagelayout-login,
+.pagelayout-report {
+    /*background: url([[pix:theme|body]]);*/
+    background-color:#e0e0e0;
+    border-top:1px solid #c1bc9d;
+}
+
+html {
+    background: none;
+}
+
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,dl,input,textarea { 
+    font-family: tahoma, arial, sans-serif;
+    /*font-family: Georgia, "Times New Roman", Times, serif;*/
+    color: #2a2513;
+}
+
+#wrapper { 
+    width:990px;
+    background: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:3%;
+    margin-bottom:5%;
+    padding: 5px;
+    border: 1px solid #c1bc9d;
+}
+
+.courseCategory #page-content {
+	width:80%;
+	margin-left:auto;
+	margin-right: auto;
+}
+
+a { 
+    color: #af0c0c;
+}
+
+a:hover { 
+    font-weight: italic;
+}
+
+.pagelayout-frontpage #page-content #region-main-box #region-post-box { 
+    padding-top: 0;
+}
+
+/* Header
+------------------------*/
+
+#page-header { 
+    background: #fff url([[pix:theme|banner_cog]]) no-repeat right;
+    margin-bottom: 5px;
+    height:120px;
+}
+
+.has_custom_menu #page-header {
+    margin-bottom: 0px;
+}
+
+.headermain { 
+    font-weight: normal;
+    margin: 1em 0.5em 0.75em;
+}
+
+#page-content {
+    float: none;
+}
+
+/* Footer
+-------------------------*/
+#page-footer {
+    background: #4f7393 url([[pix:theme|bg_stripe]]) repeat;
+    text-align: left;
+    margin-top:2em;
+}
+
+#page-footer a {
+	color:#fff;
+}
+
+#page-footer .helplink {
+	text-align: right;
+	font-size: 85%;
+	color:#fff;
+	padding:5px;
+}
+
+#page-footer .collegeAddress {
+	padding:20px 10px;
+	
+}
+
+#page-footer .collegeAddress p, #page-footer .collegeAddress h4 {
+	color:#ccc;
+	font-size: 90%;
+}
+
+#page-footer .performanceinfo p, #page-footer .performanceinfo {
+	color: #fff;
+	width:100%;
+	text-align: right;
+	padding-right: 10px;
+	font-size: 90%;
+	margin: 5px -10px;
+	font-family: play, Georgia, "Times New Roman", Times, serif;
+}
+/* Navbar 
+-------------------------*/
+
+.navbar { 
+    padding: 5px;
+}
+
+/* Sections 
+-------------------------*/
+
+#section-0 {
+	border:none; !important
+}
+#section-0 .side {
+	display:none;
+}
+#section-0 .content {
+	margin:0;
+}
+
+.single-section .headingblock {
+	background: #4f7393 url([[pix:theme|bg_stripe]]) repeat;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	font-family:play;
+}
+.single-section .headingblock a{
+	color:#fff;
+}
+
+/* Blocks
+-------------------------*/
+
+.block { 
+	border:none;
+}
+
+.block .header { 
+	background: #4f7393 url([[pix:theme|bg_stripe]]) repeat;
+    border-radius: 3px;
+    -webkit-border-radius:3px;
+    margin: 0;
+
+}
+
+
+.block .title h2 { 
+    font-size: 1em;
+    color: #fff;
+    padding:5px;
+}
+
+.block_action { 
+    padding: 5px 0 0;
+}
+
+.block .content { 
+    background: #fff;
+    border: none;
+}
+
+.block .minicalendar td,
+.block .minicalendar th { 
+    border-color: #d8d2c6;
+}
+
+/* Login Page */
+
+.loginbox {
+	background:#ebebeb url([[pix:theme|login_bg]]) no-repeat right bottom;
+	border: 2px solid #dddddd;
+	border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    text-shadow:1px 1px 1px #ddd;
+	color: #585858;
+	font-family:play, calibri;
+	font-size:90%;
+	
+	
+}
+
+.loginbox h2 {
+	font-size: 1.6em;
+	color:#585858;
+}
+
+.loginbox .loginform .form-input input{
+  background-color:#fff;
+  background-position:initial initial;
+  background-repeat:initial initial;
+  border:1px solid #D0D0D0;
+  border-bottom-left-radius:3px;
+  border-bottom-right-radius:3px;
+  border-top-left-radius:3px;
+  border-top-right-radius:3px;
+}
+.loginbox.twocolumns .loginpanel {
+	border-right: 2px solid #ccc;
+}
+
+/* Course
+----------------------------*/
+
+.headingblock { 
+    background: url([[pix:theme|customMenuBG]]) repeat-x 0 0;
+    color: #fff;
+    font-weight: normal;
+    border: none;
+    padding: 2px 5px;
+}
+
+.course-content .main {
+    border: 1px solid #eee;
+    background: #eee;
+}
+
+.course-content .current {
+    background: #9ca7b4;
+}
+
+.course-content .current .left {
+    color: #fff;
+}
+
+.course-content .main .content {
+    background: #fff;
+}
+
+ .contentafterlink	{
+	 padding-left:20px;
+ }
+
+/* Forums 
+-----------------------------*/
+
+.forumpost .topic { 
+    background: #cad5e1;
+    border-width: 1px;
+    border-color: #eee #eee #aaa;
+    border-style: solid;
+}
+
+.forumpost .topic div,
+.forumpost .content div {
+    margin:4px;
+}
+
+
+.forumpost .starter .subject { 
+    font-weight: bold;
+}
+
+.forumpost .content { 
+    border-color: #eee;
+    border-width: 0 1px 1px;
+    border-style: solid;
+    background: #f6f6f6;
+}
+
+/* Dock
+-----------------------------*/
+
+body.has_dock { 
+    margin: 0;
+}
+
+#dock { 
+    left: 5%;
+    margin-left: -29px;
+    border-width: 0;
+    background-color: transparent;
+}
+
+#dock .controls { 
+    bottom: auto;
+    background-color: #DDD6CC;
+}
+
+#dock .dockeditem_container { 
+    position: relative;
+}
+
+#dock .dockeditem.firstdockitem { 
+    margin-top: 50px;
+}
+
+#dock .dockeditem { 
+    background-color: #fff;
+    padding: 2px;
+    padding-right: 0px;
+}
+
+#dock .dockedtitle { 
+    border-width: 0;
+}
+
+#dock .dockedtitle h2 { 
+    margin: 0;
+    padding: 10px 3px;
+}
+
+#dock .dockedtitle.activeitem { 
+    background-color: #817b65;
+    width: 35px;
+}
+
+#dockeditempanel { 
+    background-color: #817b65;
+    margin-left: 5px;
+}
+
+#dockeditempanel .dockeditempanel_content { 
+    background-color: #eee9e0;
+    margin: 0 3px;
+    position: relative;
+    top: -3px;
+    min-height: 100px;
+    border-color: #6f6856;
+}
+
+#dockeditempanel .dockeditempanel_hd { 
+    background-image: url([[pix:theme|headingblock]]);
+    border-width: 0;
+}
+
+#dockeditempanel .dockeditempanel_hd h2 { 
+    font-size: 1em;
+    color: #fff;
+}
+
+/*cutom menu */
+/*YUI Reset */
+.yui3-skin-sam #page .yui3-menu-horizontal .yui3-menu-content,
+.yui3-skin-sam #page .yui3-menu-horizontal .yui3-menu-label,
+.yui3-skin-sam #page .yui3-menu-horizontal .yui3-menu-label-active,
+.yui3-skin-sam #page .yui3-menu-horizontal .yui3-menuitem-active .yui3-menuitem-content,
+.yui3-skin-sam #page .yui3-menu-horizontal .yui3-menu-label-menuvisible {background-position: -10000px -10000px;}
+.yui3-skin-sam #page .yui3-menu-label,
+.yui3-skin-sam #page .yui3-menu .yui3-menu .yui3-menu-label,
+.yui3-skin-sam #page .yui3-menubuttonnav .yui3-menu-label em {background-position: right center;}
+.yui3-skin-sam #page .yui3-splitbuttonnav .yui3-menu-label .yui3-menu-toggle {background-position: 3px center;}
+.yui3-skin-sam #page .yui3-splitbuttonnav .yui3-menu-label-menuvisible .yui3-menu-toggle {background-position: 0% 50%;}
+
+#custommenu {
+    clear: both;
+    background-image: url([[pix:theme|headingblock]]);
+    margin-bottom: 5px;
+    
+}
+
+.yui3-skin-sam #page .yui3-menu-label,
+.yui3-skin-sam #custommenu .yui3-menuitem-content  {
+    color: #fff;
+    font-weight: 800;
+    line-height: 30px;
+}
+
+.custom_menu_submenu .yui3-menu-label,
+.custom_menu_submenu .yui3-menuitem-content {
+    color: #000 !important;
+    text-shadow: none !important;
+    line-height: 25px;
+    font-family: play, Georgia, "Times New Roman", Times, serif;
+}
+
+.yui3-skin-sam #page .yui3-menu-label.yui3-menu-label-active,
+.yui3-skin-sam #page .yui3-menu-label.yui3-menu-label-menuvisible,
+.yui3-skin-sam #page .yui3-menuitem-active .yui3-menuitem-content {
+    color: #4f7595;
+    background-color: #ffffff;
+    font-family: play, Georgia, "Times New Roman", Times, serif;
+}
+
+.yui3-skin-sam #page .yui3-menu-content,
+.yui3-skin-sam #page .yui3-menu-content,
+.yui3-skin-sam #page .yui3-menu .yui3-menu .yui3-menu-content,
+.yui3-skin-sam #page .yui3-menu-horizontal .yui3-menu-label,
+  {
+    border: none !important;
+}
+
+.yui3-skin-sam .yui3-menu-horizontal .yui3-menu-label,
+.yui3-skin-sam .yui3-menu-horizontal .yui3-menuitem-content {
+    border-color:#808080;
+    border-style:solid;
+    border-width:0px 0;
+    font-family: play, Georgia, "Times New Roman", Times, serif;
+}
+
+/* Custom Menu 
+-----------------------------*/
+
+#custommenu {
+    clear: both;
+    background: #4f7393 url([[pix:theme|customMenuBG]]);
+    margin-bottom: 5px;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+  	color:#FFFFFF;
+  	text-decoration:none;
+  	
+    
+}
+
+#custommenu li {
+	border-right:1px solid #666;
+}
+
+#custommenu ul.dropdown li a, #custommenu ul.dropdown span, #custommenu ul.dropdown span a {
+	border:none;
+	font-weight: 800;
+	line-height: 30px;
+}
+
+#custommenu a.yui3-menu-label:hover {
+	background-color:#666;
+	}
+
+#custommenu ul.dropdown li {
+	background-color:#666;
+	padding-right:1em;
+}
+#custommenu li a:hover {
+	background-color: #666;
+	color: #4f7393;
+}
+#custommenu ul.dropdown li span.customitem {
+	border:none;
+	padding-top:0px;
+}
+
+#custommenu .logininfo {
+	float:right;
+	font-size:80%;
+	margin-top:-20px;
+	margin-right:10px;
+}
+
+#custommenu .logininfo a {
+	color:#eee;
+}
+
+#page .custom_menu_submenu {
+    border: 2px solid #d8d2c6 !important;
+    background: #fff;
+     -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-box-shadow: 0px 1px 3px #ccc;
+    -moz-box-shadow: 0px 1px 3px #ccc;
+    box-shadow: 0px 1px 3px #ccc;
+}
+
+/* myMoodle Page 
+-----------------------*/
+
+#myMoodleBanner {
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+}
+
+.path-my .coursebox .overview {
+	font-size: 85%;
+}
+.region-content .block h3.main {
+	font-size: 1em;
+	padding: 0.1em 0;
+	
+}
+
+/* Course Manager */
+
+.cmanager td, .cmanager, th {
+	padding:0.15px;
+}
+
+/* Course Header */
+#courseHeader {
+	font-size: 24px;
+	font-weight:bold;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	padding-left: 200px;
+	padding-top:4%;
+	padding-bottom:4%;
+}
+
+
+.head33 {background: url([[pix:theme|banners/MoodleBannerBusinessGateway]]) no-repeat center; color:#666;}			/* Business Gateway */ 
+.head81 {background: url([[pix:theme|banners/MoodleBannerTUStudies]]) no-repeat center; color:#666;}				/* TUS */ 
+.head83 {background: url([[pix:theme|banners/MoodleBannerPublicServices]]) no-repeat center; color:#666;}			/* Public Services */ 
+.head94 {background: url([[pix:theme|banners/MoodleBannerOnlineCollege]]) no-repeat center; color:#666;}			/* Online College */ 
+.head133 {background: url([[pix:theme|banners/MoodleBannersdanimal]]) no-repeat center; color:#666;}				/* Science, Dental and Animal Care */ 
+.head139 {background: url([[pix:theme|banners/MoodleBannerCateringBakingHospAv]]) no-repeat center; color:#373333;}	/* Catering */ 
+.head150 {background: url([[pix:theme|banners/MoodleBannerCateringBakingHospAv]]) no-repeat center; color:#373333;} /* Baking,Hostpitality & Aviation */ 
+.head170 {background: url([[pix:theme|banners/MoodleBannerChampions]]) no-repeat center; color:#666;}				/* ILT Gateway */ 
+.head214 {background: url([[pix:theme|banners/MoodleBannerGuest]]) no-repeat center; color:#666;}					/* Guest Area */ 
+.head217 {background: url([[pix:theme|banners/MoodleBannerArtDesign]]) no-repeat center; color:#666;}				/* Art and Design */ 
+.head218 {background: url([[pix:theme|banners/MoodleBannerbusinessIT]]) no-repeat center; color:##3c2d4e;}			/* Business & IT */ 
+.head219 {background: url([[pix:theme|banners/MoodleBannerstudentservices]]) no-repeat center; color:#666;}			/* Student Services */ 
+.head221 {background: url([[pix:theme|banners/MoodleBannerHealthSocialCare]]) no-repeat center; color:#666;}		/* Health and Social Care */ 
+.head223 {background: url([[pix:theme|banners/MoodleBannerPhotoextmediaJourno]]) no-repeat center; color:#666;}		/* Photography & extmedia */ 
+.head230 {background: url([[pix:theme|banners/MoodleBannerEnterprise]]) no-repeat center; color:#666;}				/* Enterprise Gateway */ 
+.head239 {background: url([[pix:theme|banners/MoodleBannerSport]]) no-repeat center; color:#666;}					/* Sport */ 
+.head255 {background: url([[pix:theme|banners/MoodleBannerconstruction]]) no-repeat center; color:#666;}			/* Construction */ 
+.head256 {background: url([[pix:theme|banners/MoodleBannerPerformingArts]]) no-repeat center; color:#666;}			/* Performing Arts */ 
+.head263 {background: url([[pix:theme|banners/MoodleBannerHairbeauty]]) no-repeat center; color:#666;}				/* Hair and Beauty */ 
+.head265 {background: url([[pix:theme|banners/MoodleBannerGCSE]]) no-repeat center; color:#666;}					/* GCSE */ 
+.head287 {background: url([[pix:theme|banners/MoodleBannerAlevel]]) no-repeat center; color:#666;}					/* A Levels */ 
+.head324 {background: url([[pix:theme|banners/MoodleBannerTutorials]]) no-repeat center; color:#fff;}				/* Tutorials */
+.head337 {background: url([[pix:theme|banners/MoodleBannerTravelTourism]]) no-repeat center; color:#666;}			/* Travel & Tourism */ 
