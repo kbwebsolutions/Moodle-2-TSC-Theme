@@ -21,19 +21,6 @@ function moodle2_tsc_performance_output($param) {
     return $html;
 }
 
-/**
- * Adds the JavaScript for the edit buttons to the page.
- *
- * The edit buttoniser is a YUI moodle module that is located in
- *     theme/moodle2_tsc/yui/editbuttons/editbuttons.js
- *
- * @param moodle_page $page 
- */
-function moodle2_tsc_initialise_editbuttons(moodle_page $page) {
-    $page->requires->string_for_js('edit', 'moodle');
-    $page->requires->yui_module('moodle-theme_moodle2_tsc-editbuttons', 'M.theme_moodle2_tsc.initEditButtons');
-}
-
 function moodle2_tsc_initialise_awesomebar(moodle_page $page) {
     $page->requires->yui_module('moodle-theme_moodle2_tsc-awesomebar', 'M.theme_moodle2_tsc.initAwesomeBar');
 }
