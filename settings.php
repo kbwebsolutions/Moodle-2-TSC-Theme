@@ -25,15 +25,6 @@ if ($ADMIN->fulltree) {
     $choices = array(1=>'Yes', 0=>'No');
     $setting = new admin_setting_configselect($name, $title, $description, $default, $choices);
     $settings->add($setting);
-    
-    // Show user profile picture
-    $name = 'theme_moodle2_tsc/showuserpicture';
-    $title = get_string('showuserpicture','theme_moodle2_tsc');
-    $description = get_string('showuserpicturedesc', 'theme_moodle2_tsc');
-    $default = 0;
-    $choices = array(1=>'Yes', 0=>'No');
-    $setting = new admin_setting_configselect($name, $title, $description, $default, $choices);
-    $settings->add($setting);
 
     // Add custom menu to Awesomebar
     $name = 'theme_moodle2_tsc/custommenuinawesomebar';
