@@ -22,66 +22,6 @@ function moodle2_tsc_performance_output($param) {
 }
 
 /**
- * Makes our changes to the CSS
- *
- * @param string $css
- * @param theme_config $theme
- * @return string
- */
-function moodle2_tsc_process_css($css, $theme) {
-
-    if (!empty($theme->settings->backgroundcolor)) {
-        $backgroundcolor = $theme->settings->backgroundcolor;
-    } else {
-        $backgroundcolor = null;
-    }
-    $css = moodle2_tsc_set_backgroundcolor($css, $backgroundcolor);
-
-    if (!empty($theme->settings->customcss)) {
-        $customcss = $theme->settings->customcss;
-    } else {
-        $customcss = null;
-    }
-    $css = moodle2_tsc_set_customcss($css, $customcss);
-
-    return $css;
-}
-
-/**
- * Sets the background colour variable in CSS
- *
- * @param string $css
- * @param mixed $backgroundcolor
- * @return string
- */
-function moodle2_tsc_set_backgroundcolor($css, $backgroundcolor) {
-    $tag = '[[setting:backgroundcolor]]';
-    $replacement = $backgroundcolor;
-    if (is_null($replacement)) {
-        $replacement = '#EEEEEE';
-    }
-    $css = str_replace($tag, $replacement, $css);
-    return $css;
-}
-
-/**
- * Sets the custom css variable in CSS
- *
- * @param string $css
- * @param mixed $customcss
- * @return string
- */
-function moodle2_tsc_set_customcss($css, $customcss) {
-    $tag = '[[setting:customcss]]';
-    $replacement = $customcss;
-    if (is_null($replacement)) {
-        $replacement = '';
-    }
-    $css = str_replace($tag, $replacement, $css);
-    return $css;
-}
-
-/**
  * Adds the JavaScript for the edit buttons to the page.
  *
  * The edit buttoniser is a YUI moodle module that is located in
